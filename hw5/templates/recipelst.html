@@ -1,0 +1,18 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Recipes</h2>
+    <h3>Current Recipes</h3>
+    {% for recipe in some_recipes %}
+        <p class=entry>
+            <font size="5" color="Orange"><b><i>{{ recipe.title }}</i></b></font>
+            <br><font size="4" color="Orange">&lt;{{ recipe.prep_time }} &gt;</i></b></font></br>
+            <b>Difficulty:</b> {{ recipe.skill_lv }}
+            <br><b>Author:</b> {{ recipe.author }}</br>
+            <br><font color="blue"><i><u>Ingredient's List</u></i></font></br>
+            {{ recipe.ingred_list }}
+            <br></br>
+            <br><font color="blue"><i><u>Preperation Steps</u></i></font></br>
+            {{ recipe.descrip }}
+        </p>
+    {% endfor %}
+{% endblock %}
