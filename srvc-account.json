@@ -1,0 +1,12 @@
+{
+  "type": "service_account",
+  "project_id": "handy-compass-212520",
+  "private_key_id": "aa55306fbf6623ebce184f7bdee3227f807c16db",
+  "private_key": "-----BEGIN PRIVATE KEY-----\nMIIEvQIBADANBgkqhkiG9w0BAQEFAASCBKcwggSjAgEAAoIBAQCWPWnsTkfdU2VO\nkrOxDh0oYN5PUuVWYR/p/W3v76aydANTsl1pxhweJN/0bybazQp6BuH6vhWP+bkS\nbSGGsxNYhr9XXvKnhgo7tFcguvzRx0dD5CyLbJ6okN9gcAfC7jBeyuIo4U9ZV8Gd\nfrfcvvDQ/ETpqCmQjnXWK4BHbkwMxWe7hhMqG21DxEm+qXPzBq7uc7+fSHCkzBH7\nUT21DgwZ9nI8nPytXTyP3QTs5ubHqgbzGDiSb7Ykn9fqDgAsx46ejs59uOuvJfnQ\niYU0D9hNTIY0EdnbzR1rKosx1BGWZjDKAn+gETW5kREocsO9fkjU+31JIAIL61nc\ny7sKrPiBAgMBAAECggEABCMgn3C6CfVEzJG1sf8kuHjHK2+ZvBfOauVrK3KlzEuN\nf0axy8a4TdBTtFvCme8wOgM2Mi8tiWSJ2yEDJa4pDuCuTIbrW0eRsOJk3TRn/5P/\nfW4nR7895OABLjr0jEKuVWBscx4t/uyfstVPVWxixdsCD+4FB7+EDUHfOVxXOtli\nm6eqfJnEadAdRPlAMWM4XuKZTrcN2cwigZuFGA9sh4x4CnVWhiBqRlC9TfQDfRXl\nEso/w02RuVJ/QbwWLgRFh6sn5TpKtCXsxx6G8sbTGfEZDgouounj+wZ6ujhNP2Ro\nuMbSAZIJ5xIawhyS7RXmWLtJQinmc2iN3lM3XXeQoQKBgQDNBTCVhik57vo4FncL\nGFqS+MWnZ3movq7WGGIuzntRoW/bIl3wFKLabwAOQmZ9fMELY1rYnln1g9nmetNE\nzhfdtiFSke5F59PWzq7dcVdPjf+kB8a1wktq+S2RhQCmkxrTQfM13nMQaU6aA1d5\n/bogr6zxEzkH6S9wBDP2f+EOYQKBgQC7mR0iSVNIJAvoKYRqVTZZn4BdZ8JuN6LI\naZlrIukDjeD+bJpphuK+sEENkLTJ96EilF7htUcnB0FeSPllNk9nS8tJbhOl7vMk\nmeoSa4dDTgSSQZu+octeK+btEQROzAoIEkKkZFurpwbWUEiwKiJmP6nNn71xaiaK\njZT2HXLeIQKBgA+Z1H+cTOjOqZW5B+f9O28xpQC/G//eOrmp81ayeanVigh3zgQl\n3dqXVb7ACMKFyr7OGaygKCJJnTwvnoH+2MwTPufkmOgS4wjWg3HwXP99w7U8rj9I\ngKqsOW54W3tReFoZC6POwJzAFq4bkP2EdDRmiddyagWTFfwFJdsdEgghAoGBAIwJ\nvj/L8MlXbzP9WgVuWsYIVPBk9jUEfxWQDqB1TPAER0Jlm9bOhBDIzabssKhbnAOO\nMk3W3qh5uAhD/TfalOeNItFLxIsHlqVp59ucPTq20J7FLxfc+0zvBNFO9KJFme9w\ngiLpb6zxYB83iytGKKufNohyiB5TmTWwftRCI29BAoGAafFg8BEIFkueRMW905tz\nlxwn5Bfl7A2UYTT15OnyexODfk0kJh31jApWTVq7K9LUHob1AjqHodI38x6VXj0S\np+f1IlRvu4F3MlBrUTS0ejImI/yRLeyguL7cltrzogF2z9d4ZdoUoT5L5nxg3vKS\neG89Yh2u7TsP0V8NKbYQYm4=\n-----END PRIVATE KEY-----\n",
+  "client_email": "level5-snapshot@handy-compass-212520.iam.gserviceaccount.com",
+  "client_id": "100348312172804257521",
+  "auth_uri": "https://accounts.google.com/o/oauth2/auth",
+  "token_uri": "https://oauth2.googleapis.com/token",
+  "auth_provider_x509_cert_url": "https://www.googleapis.com/oauth2/v1/certs",
+  "client_x509_cert_url": "https://www.googleapis.com/robot/v1/metadata/x509/level5-snapshot%40handy-compass-212520.iam.gserviceaccount.com"
+}
