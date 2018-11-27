@@ -1,0 +1,13 @@
+{% extends "layout.html" %}
+{% block content %}
+    <h2>Publish Recipies</h2>
+    <form action="{{ url_for('publish') }}" method=post>
+    <p class="heading">Title: <input type=text name=title></p>
+    <p class="heading">Author: <input type=text name=author></p>
+    <p class="heading">Ingredient List: <textarea rows=6 cols=90 name=ingredlst></textarea></p>
+    <p class="heading">Preperation Time: <input type=text name=preptime></p>
+    <p class="heading">Skill Level: <input type=text name=skilllv></p>
+    <p class="heading">Description: <textarea rows=8 cols=90 name=descrip></textarea></p>
+    <p><input type=submit value=Publish></p>
+    </form>
+{% endblock %}

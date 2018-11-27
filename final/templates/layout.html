@@ -1,0 +1,15 @@
+<!doctype html>
+<html>
+<title>My Recipes</title>
+<link rel=stylesheet type=text/css href="{{ url_for('static', filename='styles3.css') }}">
+<div class=page>
+<tr>
+        <font size='5'><td><a href="{{ url_for('home') }}">Home</a>&emsp;</td></font>
+        <font size='5'><td><a href="{{ url_for('recipelst') }}">Recipes</a>&emsp;</td></font>
+        <font size='5'><td><a href="{{ url_for('publish') }}">Publish Recipe</a>&emsp;</td></font>
+</tr>
+</div>
+<div class=page>
+    {% block content %}{% endblock %}
+</div>
+</html>
