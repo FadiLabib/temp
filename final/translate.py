@@ -7,12 +7,8 @@ import rmodel
 #translate.html processes the recipes_raw data and displays it to the end user
 class Translate(MethodView):
     def get(self):
-        model=rmodel.get_model()
-
-        #Use the model to fetch information
-        # from Datastore about each recipe
-        query = model.query(kind='ArRecipes')
-        recipes_translated = list(query.fetch())
+         model = rmodel.get_model()
+         recipes_translated = [dict(title=row[0], author=row[1], ingred_list=row[2], prep_time=row[3], skill_lv=row[4], descrip=row[5]) for row in model.select_translated()]
 
         #Pass recipes_translated to Jinja2 template to render
         return render_template('translate.html',some_recipes=recipes_translated) 
