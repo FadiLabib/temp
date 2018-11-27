@@ -15,4 +15,4 @@ class Translate(MethodView):
         recipes_translated = list(query.fetch())
 
         #Pass recipes_translated to Jinja2 template to render
-         return render_template('translate.html',some_recipes=recipes_translated) 
+        return render_template('translate.html',some_recipes=recipes_translated) 

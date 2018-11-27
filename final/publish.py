@@ -26,12 +26,12 @@ class Publish(MethodView):
         """
         model = rmodel.get_model()
         model.insert(request.form['title'], request.form['author'], request.form['ingredlst'], request.form['preptime'], request.form['skilllv'], request.form['descrip'])
-        title = translate_text(ar,request.form['title']
-        author = translate_text(ar, request.form['author'] 
-        ingredlst = translate_text(ar, request.form['ingredlst']
-        preptime = translate_text(ar, request.form['preptime']
-        skilllv = translate_text(ar, request.form['skilllv']
-        descrip = translate_text(ar, request.form['descrip']
+        title = translate_text(ar,request.form['title'])
+        author = translate_text(ar, request.form['author']) 
+        ingredlst = translate_text(ar, request.form['ingredlst'])
+        preptime = translate_text(ar, request.form['preptime'])
+        skilllv = translate_text(ar, request.form['skilllv'])
+        descrip = translate_text(ar, request.form['descrip'])
 
         model.insert_translated(title, author, ingredlst, preptime, skilllv, descrip)
         return redirect(url_for('recipelst'))

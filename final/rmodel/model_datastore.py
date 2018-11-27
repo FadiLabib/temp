@@ -42,6 +42,11 @@ class model(Model):
         entities = list(map(from_datastore,query.fetch()))
         return entities
 
+    def select_translated(self):
+        query = self.client.query(kind = 'ArRecipes')
+        trans_entities = list(map(from_datastore,query.fetch()))
+        return trans_entities
+
     def insert(self,title,author,ingredientslist,preperationtime,skilllevel,description):
         key = self.client.key('Recipe')
         recipe = datastore.Entity(key)
