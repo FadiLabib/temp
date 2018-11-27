@@ -61,10 +61,10 @@ class model(Model):
         self.client.put(recipe)
         return True
 
-    def insert_translated(self,title,authoer,ingredientslist,preperationtime,skilllevel,description):
-        key = self.cleint.key('ArRecipes')
+    def insert_translated(self,title,author,ingredientslist,preperationtime,skilllevel,description):
+        key = self.client.key('ArRecipes')
         recipes_translated = datastore.Entity(key)
-        recipe_translated.update( {
+        recipes_translated.update( {
             'title': title,
             'author' : author,
             'ingred_list' : ingredientslist,
@@ -72,6 +72,6 @@ class model(Model):
             'skill_lv' : skilllevel,
             'descrip' : description
             })
-        self.client.put(recipe_translated)
+        self.client.put(recipes_translated)
         return True
 
