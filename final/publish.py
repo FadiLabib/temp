@@ -2,7 +2,6 @@ from flask import redirect, request, url_for, render_template
 from flask.views import MethodView
 import rmodel
 from google.cloud import translate
-import six
 
 class Publish(MethodView):
     def get(self):
@@ -11,11 +10,8 @@ class Publish(MethodView):
     def translate_text(target, text):
         translate_client = translate.Client()
 
-        if isinstance(text, six.binary_type):
-            text = text.decode('utf-8')
-
-        result = translate_cleint.translate(text, target_langauge=target)
-        return result
+        translation = translate_client.translate(text, target_langauge=target)
+        return translation
 
     def post(self):
         """
@@ -26,7 +22,9 @@ class Publish(MethodView):
         """
         model = rmodel.get_model()
         model.insert(request.form['title'], request.form['author'], request.form['ingredlst'], request.form['preptime'], request.form['skilllv'], request.form['descrip'])
-        title = request.form['title']
+        # in theory I would like to call translate text on all the lines below and then add the transalted version to the other database
+        #When I try and do this it tells me that the funcitons is undefined. even though I defined it above
+        title = translate_text('ar', request.form['title'])
         author = request.form['author'] 
         ingredlst = request.form['ingredlst']
         preptime = request.form['preptime']
