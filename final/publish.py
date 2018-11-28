@@ -7,10 +7,10 @@ class Publish(MethodView):
     def get(self):
         return render_template('publish.html')
 
-    def translate_text(target, text):
+    def translate_text(self, target, text):
         translate_client = translate.Client()
 
-        translation = translate_client.translate(text, target_langauge=target)
+        translation = translate_client.translate(text, target_language=target)['translatedText']
         return translation
 
     def post(self):
@@ -20,11 +20,14 @@ class Publish(MethodView):
         Insert translated data into datastore
         Redirect to recipelst when completed.
         """
+        translate_client = translate.Client()
+        language = "ar"
         model = rmodel.get_model()
         model.insert(request.form['title'], request.form['author'], request.form['ingredlst'], request.form['preptime'], request.form['skilllv'], request.form['descrip'])
         # in theory I would like to call translate text on all the lines below and then add the transalted version to the other database
         #When I try and do this it tells me that the funcitons is undefined. even though I defined it above
-        title = translate_text('ar', request.form['title'])
+        #title = translate_client.translate(request.form['title'], target_language=language)['translatedText']
+        title = self.translate_text(language, request.form['title'])
         author = request.form['author'] 
         ingredlst = request.form['ingredlst']
         preptime = request.form['preptime']
